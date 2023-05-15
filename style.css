@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+body{
+    background-color : hsl(27, 66%, 92%);
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#card{
+    margin :  2rem 1rem;
+    background-color : hsl(27, 66%, 92%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    min-width: 350px;
+    max-width: 450px;
+}
+
+#section-1{
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    padding: 1rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+#balance-component{
+    width: 100%;
+}
+#balance-title{
+    font-size : 0.8rem;
+    color : hsl(27, 66%, 92%)
+}
+#balance-money{
+    color :hsl(27, 66%, 92%)
+}
+
+#svg {
+    content: url('./images/logo.svg');
+    height : 3rem;
+    width: 3rem;
+}
+#section-2{
+    background-color: hsl(33, 100%, 98%);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#chart{
+    margin-bottom: 1rem;
+    height: 300px;
+    display: flex;
+    align-items: end;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    margin: 0 4px;
+    width: 100%;
+}
+
+.col-name{
+
+    font-size: 0.8rem;
+
+}
+
+.col-money{
+    display: none;
+    background-color: black;
+    color : white;
+    font-size: 0.7rem;
+    padding : 0.3rem;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+.col-size{
+    background-color:  hsl(10, 79%, 65%);
+    border-radius: 5px;
+    min-width: 35px;
+    width: 100%;
+    max-width: 55px;
+    height: 100px;
+    margin-bottom : 1rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 1s;
+
+}
+.col-size:hover {
+    background-color: hsla(10, 79%, 65%, 0.537);
+}
+
+#spending-title{
+    font-size : 1.5rem;
+    font-weight: 700;
+}
+
+
+.column-2{
+    text-align: right;
+}
+
+#total{
+    font-size: 12px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top : 1.5rem;
+ 
+    
+}
+#total-month{
+    font-weight: 100;
+    color: rgb(126, 126, 126);
+}
+
+#total-month-money{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#pasentage-money{
+    font-size : 0.8rem;
+    font-weight: 700;
+}
+#last-month{
+    font-weight: 100;
+    color: rgb(126, 126, 126);
+}
+
+
+@media only screen and (min-width: 700px) {
+   #card{
+    margin:  5rem auto;
+   }
+    
+
+}
